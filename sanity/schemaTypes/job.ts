@@ -37,6 +37,7 @@ export default defineType({
         list: [
           {title: 'Full-time', value: 'Full-time'},
           {title: 'Part-time', value: 'Part-time'},
+          {title: 'Freelance', value: 'Freelance'},
           {title: 'Internship', value: 'Internship'},
           {title: 'Contract', value: 'Contract'},
         ],
