@@ -1,5 +1,5 @@
 export interface Company {
-  title: string;
+  name: string;
   logo: string;
   description: string;
   locations: string;
@@ -11,6 +11,7 @@ export interface Job {
   company: Company;
   title: string;
   description: string;
+  link: string;
   postedDate: string;
   industry: string[];
   deadline: string;

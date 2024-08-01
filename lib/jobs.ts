@@ -14,6 +14,7 @@ export async function getAllJobs(): Promise<Job[]> {
             },
             title,
             description,
+            link,
             postedDate,
             industry,
             deadline

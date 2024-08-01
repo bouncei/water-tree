@@ -22,6 +22,12 @@ export default defineType({
       validation: (Rule: {required: () => any}) => Rule.required(),
     },
     {
+      name: 'link',
+      type: 'url',
+      title: 'Job Link',
+      validation: (Rule: {required: () => any}) => Rule.required(),
+    },
+    {
       name: 'company',
       title: 'Company',
       type: 'reference',
