@@ -72,8 +72,6 @@ const JobsPage = () => {
 
   if (!isMounted) return null;
 
-  console.log("All jobs", jobs);
-
   return (
     <div className="h-full flex flex-col">
       <div className="flex flex-1 gap-y-3  flex-col">
