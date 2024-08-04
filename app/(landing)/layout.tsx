@@ -13,7 +13,7 @@ const LandingPageLayout = ({ children }: { children: React.ReactNode }) => {
       {/* FLOATING LEAF */}
       <div className="fixed top-0  right-0">
         <div
-          className=" size-64 z-10 bg-white"
+          className=" size-64 z-20 bg-white"
           style={{
             backgroundImage: `url('/hero_header.webp')`,
             backgroundSize: "contain",

@@ -19,10 +19,6 @@ export const routes = [
     title: "Jobs",
     href: "/jobs",
   },
-  {
-    title: "Contact",
-    href: "/contact",
-  },
 ];
 
 export const industries = [
