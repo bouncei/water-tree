@@ -4,6 +4,10 @@ export const routes = [
     href: "/",
   },
   {
+    title: "About",
+    href: "/about",
+  },
+  {
     title: "Portfolio",
     href: "/portfolio",
   },
@@ -11,13 +15,25 @@ export const routes = [
     title: "How It Works",
     href: "/how-it-works",
   },
-  {
-    title: "About",
-    href: "/about",
-  },
+
   {
     title: "Jobs",
     href: "/jobs",
+  },
+];
+
+export const aboutSublinks = [
+  {
+    title: "Principles",
+    href: "/about/principles",
+  },
+  {
+    title: "Organization",
+    href: "/about/organization",
+  },
+  {
+    title: "Team",
+    href: "/about/team",
   },
 ];
 

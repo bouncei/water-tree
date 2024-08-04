@@ -76,18 +76,18 @@ const JobsPage = () => {
     <div className="h-full flex flex-col">
       <div className="flex flex-1 gap-y-3  flex-col">
         <div className="py-14 md:py-16  flex flex-col items-center justify-center gap-10 border-b-2 border-b-primary/70 ">
-          <div className="text-2xl">
+          <div className="text-2xl font-medium ">
             Opportunities in the Leaftree Portfolio
           </div>
 
           <div className="flex items-center gap-7">
             <div className="flex flex-col items-center">
-              <div className="text-2xl">{companies?.length}</div>
+              <div className="text-2xl font-medium">{companies?.length}</div>
               <div className="text-sm">COMPANIES</div>
             </div>
 
             <div className="flex flex-col items-center">
-              <div className="text-2xl">{jobs?.length}</div>
+              <div className="text-2xl font-medium">{jobs?.length}</div>
               <div className="text-sm">JOBS</div>
             </div>
           </div>

@@ -12,7 +12,7 @@ const Logo = () => {
   return (
     <Link href="/" className="flex items-center ">
       <div className="relative size-28 md:size-28 mr-2 -ml-10 ">
-        <Image fill src="/logo.webp" alt="Logo" className="  " />
+        <Image fill src="/logo.webp" alt="Logo" />
       </div>
 
       <h1

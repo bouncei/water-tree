@@ -9,14 +9,14 @@ const LandingPageLayout = ({ children }: { children: React.ReactNode }) => {
   const pathname = usePathname();
 
   return (
-    <main className="h-full overflow-auto ">
+    <main className="h-full overflow-auto  ">
       {/* FLOATING LEAF */}
-      <div className="fixed top-0  right-0">
+      <div className="fixed top-0 z-20 right-0">
         <div
-          className=" size-64 z-20 bg-white"
+          className=" size-28 sm:size-40 mt-14 "
           style={{
             backgroundImage: `url('/hero_header.webp')`,
-            backgroundSize: "contain",
+            backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "right",
           }}

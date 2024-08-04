@@ -21,3 +21,14 @@ export type Options = {
   industry?: string;
   company?: string;
 };
+
+export type Team = {
+  name: string;
+  position: string;
+  image: string;
+  bio: string;
+  twitter: string;
+  facebook: string;
+  instagram: string;
+  linkedin: string;
+};
