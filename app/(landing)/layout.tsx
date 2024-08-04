@@ -1,10 +1,12 @@
+"use client";
+
 import NavBar from "@/components/navbar";
 import { cn } from "@/lib/utils";
+import { usePathname } from "next/navigation";
 import React from "react";
 
 const LandingPageLayout = ({ children }: { children: React.ReactNode }) => {
-  // TODO: GET ALL JOBS
-  // TODO: GET ALL COMPANIES
+  const pathname = usePathname();
 
   return (
     <main className="h-full overflow-auto ">
@@ -24,7 +26,7 @@ const LandingPageLayout = ({ children }: { children: React.ReactNode }) => {
       <div
         className={cn("mx-auto h-full max-w-screen-xl px-6 xl:p-0 relative")}
       >
-        <NavBar />
+        {pathname !== "/" && <NavBar />}
         {children}
       </div>
     </main>
