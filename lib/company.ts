@@ -1,4 +1,4 @@
-import client from "@/sanity";
+import { client } from "@/sanity/lib/client";
 
 export async function getAllCompanies(): Promise<any[]> {
   const query = '*[_type == "company"]';

@@ -7,7 +7,7 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Team } from "@/lib/types";
-import { urlFor } from "@/sanity";
+import { urlFor } from "@/sanity/lib/image";
 import { Button } from "../ui/button";
 import Link from "next/link";
 import { Linkedin, Twitter } from "lucide-react";

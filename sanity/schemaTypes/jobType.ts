@@ -1,6 +1,6 @@
 import {defineType} from 'sanity'
 
-export default defineType({
+export const jobType = defineType({
   name: 'job',
   type: 'document',
   fields: [

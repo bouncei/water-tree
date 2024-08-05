@@ -2,7 +2,8 @@ import React, { useEffect, useMemo } from "react";
 import { Card } from "../ui/card";
 import { Job } from "@/lib/types";
 import Image from "next/image";
-import { urlFor } from "@/sanity";
+import { urlFor } from "@/sanity/lib/image";
+
 import Link from "next/link";
 
 interface CompanyCardProps {

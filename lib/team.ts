@@ -1,4 +1,4 @@
-import client from "@/sanity";
+import { client } from "@/sanity/lib/client";
 import { Team } from "./types";
 
 export async function getTeamMembers(): Promise<Team[]> {

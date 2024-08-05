@@ -35,7 +35,7 @@ const NavBar = () => {
         {routes.map((route) => {
           if (route.title.toLowerCase() === "about") {
             return (
-              <NavigationMenu>
+              <NavigationMenu key={route.href}>
                 <NavigationMenuList>
                   <NavigationMenuItem>
                     <NavigationMenuTrigger>About</NavigationMenuTrigger>

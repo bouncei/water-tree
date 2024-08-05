@@ -1,6 +1,6 @@
 import {defineType} from 'sanity'
 
-export default defineType({
+export const companyType =  defineType({
   name: 'company',
   title: 'Company',
   type: 'document',

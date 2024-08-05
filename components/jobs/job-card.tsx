@@ -4,7 +4,8 @@ import { Card } from "../ui/card";
 import { Button } from "../ui/button";
 import { ChevronRight } from "lucide-react";
 import Image from "next/image";
-import { urlFor } from "@/sanity";
+import { urlFor } from "@/sanity/lib/image";
+
 import { formatPostedDate } from "@/lib/dateUtils";
 import { Badge } from "../ui/badge";
 import Link from "next/link";

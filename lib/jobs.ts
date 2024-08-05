@@ -1,4 +1,4 @@
-import client from "@/sanity";
+import { client } from "@/sanity/lib/client";
 import { Job, Options } from "./types";
 
 export async function getAllJobs(): Promise<Job[]> {
