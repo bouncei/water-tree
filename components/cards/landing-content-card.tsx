@@ -36,7 +36,7 @@ const LandingContentCard = ({
       </div>
 
       <div className=" tracking-wide leading-loose text-muted-foreground">
-        "{quote}"
+        &quot;{quote}&quot;
       </div>
 
       <div className=" tracking-wide leading-loose text-muted-foreground">
