@@ -43,7 +43,7 @@ const LandingHero = () => {
     <div className=" flex items-center justify-center ">
       {/* Optional overlay for better text visibility */}
       {/* <div className="absolute inset-0 bg-black opacity-0 lg:opacity-20"></div> */}
-      <div className="h-[70dvh] py-4 md:py-16  flex items-center justify-center gap-10 border-b-2 border-b-primary/70 ">
+      <div className="h-[80dvh] py-4 md:py-20  flex items-center justify-center gap-10 border-b-2 border-b-primary/70 ">
         <div className="relative  w-full lg:w-[50%] ">
           <div className="w-full text-left space-y-4 sm:space-y-8 py-8">
             <div className="text-4xl lg:text-5xl xl:text-6xl font-bold relative">
@@ -98,7 +98,6 @@ const LandingHero = () => {
 
         <div className=" hidden md:flex ml-auto    w-[50%] h-full  relative">
           <Image src="/hero.webp" alt="hero image" fill />
-          {/* // TODO: PUT A TREE IMAGE HERE */}
         </div>
       </div>
     </div>

@@ -26,7 +26,7 @@ const NavBar = () => {
   return (
     <div
       className={cn(
-        "sticky top-0  bg-transparent  flex items-center justify-between  z-20",
+        "sticky top-0  bg-transparent  flex items-center justify-between  z-20  bg-opacity-30 backdrop-blur-sm ",
         pathname === "/" && ""
       )}
     >
@@ -38,7 +38,9 @@ const NavBar = () => {
               <NavigationMenu key={route.href}>
                 <NavigationMenuList>
                   <NavigationMenuItem>
-                    <NavigationMenuTrigger>About</NavigationMenuTrigger>
+                    <NavigationMenuTrigger className="bg-transparent">
+                      About
+                    </NavigationMenuTrigger>
                     <NavigationMenuContent className="z-10">
                       <ul className=" gap-3 md:w-[200px]  ">
                         <li className="row-span-3">
