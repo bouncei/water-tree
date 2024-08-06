@@ -1,6 +1,7 @@
 import { client } from "@/sanity/lib/client";
 import { Job, Options } from "./types";
 
+// GET ALL JOBS
 export async function getAllJobs(): Promise<Job[]> {
   try {
     const query = `*[_type == "job"]{
