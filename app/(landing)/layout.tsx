@@ -11,7 +11,7 @@ const LandingPageLayout = ({ children }: { children: React.ReactNode }) => {
   return (
     <main className="h-full overflow-auto  ">
       {/* FLOATING LEAF */}
-      <div className="fixed top-0 z-20 right-0">
+      {/* <div className="fixed top-0 z-20 right-0">
         <div
           className=" size-28 sm:size-40 mt-14 "
           style={{
@@ -21,7 +21,7 @@ const LandingPageLayout = ({ children }: { children: React.ReactNode }) => {
             backgroundPosition: "right",
           }}
         ></div>
-      </div>
+      </div> */}
 
       <div
         className={cn("mx-auto h-full max-w-screen-xl px-6 xl:p-0 relative")}

@@ -5,7 +5,7 @@ import React from "react";
 
 const HomePage = () => {
   return (
-    <div className="flex flex-1 flex-col">
+    <div className="flex flex-1 flex-col border-b-2 border-b-primary/70">
       <div className="h-full flex flex-col lg:h-screen   relative">
         <NavBar />
         <LandingHero />

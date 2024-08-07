@@ -5,6 +5,7 @@ import { Button } from "./ui/button";
 import Image from "next/image";
 import { Input } from "./ui/input";
 import { toast } from "sonner";
+import { ListMotion } from "./motion/list-motion";
 
 const LandingHero = () => {
   const [info, setInfo] = useState({
@@ -43,9 +44,9 @@ const LandingHero = () => {
     <div className=" flex items-center justify-center ">
       {/* Optional overlay for better text visibility */}
       {/* <div className="absolute inset-0 bg-black opacity-0 lg:opacity-20"></div> */}
-      <div className="h-[80dvh] py-4 md:py-20  flex items-center justify-center gap-10 border-b-2 border-b-primary/70 ">
+      <div className="h-[80dvh] py-4 md:py-20  flex items-center justify-center gap-10  ">
         <div className="relative  w-full lg:w-[50%] ">
-          <div className="w-full text-left space-y-4 sm:space-y-8 py-8">
+          <ListMotion className="w-full text-left space-y-4 sm:space-y-8 py-8">
             <div className="text-4xl lg:text-5xl xl:text-6xl font-bold relative">
               Investing in Human/Design-Centric{" "}
               <span className="text-primary">Innovations</span>
@@ -93,11 +94,16 @@ const LandingHero = () => {
                 }}
               />
             )}
-          </div>
+          </ListMotion>
         </div>
 
-        <div className=" hidden md:flex ml-auto    w-[50%] h-full  relative">
-          <Image src="/hero.webp" alt="hero image" fill />
+        <div className=" hidden md:flex ml-auto   w-[50%] h-full  relative">
+          <Image
+            src="/hero1.webp"
+            alt="hero image"
+            fill
+            className="object-cover"
+          />
         </div>
       </div>
     </div>

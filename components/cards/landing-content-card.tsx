@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import { ListMotion } from "../motion/list-motion";
 
 interface LandingContentCardProps {
   name: string;
@@ -21,14 +22,14 @@ const LandingContentCard = ({
   quote,
 }: LandingContentCardProps) => {
   return (
-    <div className="flex flex-col gap-10 w-full">
+    <ListMotion className="flex flex-col gap-10 w-full">
       <div className="flex flex-col gap-7">
-        <div className="relative size-[50vh] aspect-square  w-full">
+        <div className="relative size-[50vh] h-[60vh]  w-full">
           <Image
             fill
             src={userImg}
             alt="brand image"
-            className=" object-cover object-top rounded"
+            className=" object-cover object-top rounded-full"
           />
         </div>
 
@@ -42,7 +43,7 @@ const LandingContentCard = ({
       <div className=" tracking-wide leading-loose text-muted-foreground">
         - {name}, {position}, {brandName}{" "}
       </div>
-    </div>
+    </ListMotion>
   );
 };
 

@@ -20,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn("h-full", montserrat.className)}>
+      <body className={cn("h-full bg-[#EBFFEB]", montserrat.className)}>
         {/* <ThemeProvider
           attribute="class"
           defaultTheme="system"
