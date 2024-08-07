@@ -1,5 +1,6 @@
 "use client";
 
+import Footer from "@/components/footer";
 import NavBar from "@/components/navbar";
 import { cn } from "@/lib/utils";
 import { usePathname } from "next/navigation";
@@ -28,6 +29,7 @@ const LandingPageLayout = ({ children }: { children: React.ReactNode }) => {
       >
         {pathname !== "/" && <NavBar />}
         {children}
+        {pathname !== "/" && <Footer />}
       </div>
     </main>
   );

@@ -6,6 +6,7 @@ import Image from "next/image";
 import { Input } from "./ui/input";
 import { toast } from "sonner";
 import { ListMotion } from "./motion/list-motion";
+import Link from "next/link";
 
 const LandingHero = () => {
   const [info, setInfo] = useState({
@@ -61,9 +62,10 @@ const LandingHero = () => {
               <Button
                 variant="default"
                 size="lg"
-                onClick={() => setShowForm(true)}
+                // onClick={() => setShowForm(true)}
+                asChild
               >
-                Request More Info
+                <Link href="/how-it-works">How It Works</Link>
               </Button>
             ) : (
               <Input

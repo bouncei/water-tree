@@ -1,3 +1,4 @@
+import Footer from "@/components/footer";
 import LandingHero from "@/components/hero";
 import LandingContent from "@/components/landing-content";
 import NavBar from "@/components/navbar";
@@ -11,6 +12,7 @@ const HomePage = () => {
         <LandingHero />
 
         <LandingContent />
+        <Footer />
       </div>
     </div>
   );
