@@ -7,6 +7,7 @@ import { Mail, MessageCircle, Phone } from "lucide-react";
 import Logo from "./logo";
 import { Input } from "./ui/input";
 import { toast } from "sonner";
+import Link from "next/link";
 
 const Footer = () => {
   const [info, setInfo] = useState({
@@ -68,7 +69,7 @@ const Footer = () => {
         {/* <div className=" text-lg ">Contact Us</div>
         <p>Stay Up To Date</p> */}
 
-        <div className="w-full flex items-center justify-end ">
+        <div className=" flex-col flex items-end justify-end ">
           {/* <div className=" text-lg font-bold">Contat Us:</div> */}
 
           {!showForm ? (
@@ -106,6 +107,24 @@ const Footer = () => {
               }}
             />
           )}
+
+          <div>
+            Built by{" "}
+            <Button
+              asChild
+              variant="link"
+              size="sm"
+              className="px-0 transition ease-in hover:scale-105 duration-200"
+            >
+              <Link
+                href="https://bouncei.vercel.app"
+                target="_blank"
+                className="font-semibold"
+              >
+                Bouncey
+              </Link>
+            </Button>
+          </div>
         </div>
       </div>
     </div>
