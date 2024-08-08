@@ -43,7 +43,7 @@ const Footer = () => {
   };
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2  gap-4 py-20 border-b border-b-black/60">
+    <div className="grid grid-cols-1 md:grid-cols-2  gap-4 py-20 border-b border-b-primary/70">
       <div className="space-y-4">
         <Logo />
         <a href="mailto:sounds@those.app">
@@ -108,13 +108,13 @@ const Footer = () => {
             />
           )}
 
-          <div>
+          <div className="text-sm">
             Built by{" "}
             <Button
               asChild
               variant="link"
               size="sm"
-              className="px-0 transition ease-in hover:scale-105 duration-200"
+              className="px-0 transition ease-in hover:scale-105 duration-200 "
             >
               <Link
                 href="https://bouncei.vercel.app"

@@ -10,7 +10,7 @@ import { Team } from "@/lib/types";
 import { urlFor } from "@/sanity/lib/image";
 import { Button } from "../ui/button";
 import Link from "next/link";
-import { Linkedin, Twitter } from "lucide-react";
+import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
 
 interface TeamCardProps {
   member: Team;
@@ -54,7 +54,7 @@ const TeamCard = ({ member }: TeamCardProps) => {
               className="hover:bg-primary/70 hover:text-white"
             >
               <Link href={member.instagram}>
-                <Twitter className="size-4 md:size-6" />
+                <Instagram className="size-4 md:size-6" />
               </Link>
             </Button>
           )}
@@ -67,7 +67,7 @@ const TeamCard = ({ member }: TeamCardProps) => {
               className="hover:bg-primary/70 hover:text-white"
             >
               <Link href={member.facebook}>
-                <Twitter className="size-4 md:size-6" />
+                <Facebook className="size-4 md:size-6" />
               </Link>
             </Button>
           )}
