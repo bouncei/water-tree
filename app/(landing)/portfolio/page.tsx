@@ -64,22 +64,22 @@ const PortfolioPage = () => {
         <div className="flex w-full items-center">
           <Tabs defaultValue="all" className="w-full space-y-4 lg:space-y-8">
             <div className="w-full flex justify-center items-center">
-              <TabsList className="grid grid-cols-3 w-full lg:max-w-[50vw] bg-transparent">
+              <TabsList className="grid grid-cols-3 w-full gap-3 lg:max-w-[50vw] bg-transparent">
                 <TabsTrigger
                   value="all"
-                  className="data-[state=active]:bg-primary/70 text-black data-[state=active]:text-white"
+                  className="data-[state=active]:bg-primary/70 text-black data-[state=active]:text-white border border-primary/60"
                 >
                   All
                 </TabsTrigger>
                 <TabsTrigger
                   value="developing"
-                  className="data-[state=active]:bg-primary/70 text-black data-[state=active]:text-white"
+                  className="data-[state=active]:bg-primary/70 text-black data-[state=active]:text-white border border-primary/60"
                 >
                   Developing
                 </TabsTrigger>
                 <TabsTrigger
                   value="funded"
-                  className="data-[state=active]:bg-primary/70 text-black data-[state=active]:text-white"
+                  className="data-[state=active]:bg-primary/70 text-black data-[state=active]:text-white border border-primary/60"
                 >
                   Funded
                 </TabsTrigger>

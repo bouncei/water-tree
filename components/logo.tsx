@@ -13,7 +13,7 @@ const dancingSpiritFont = Dancing_Script({
 const Logo = () => {
   return (
     <Link href="/" className="flex items-center ">
-      <div className="relative size-10 md:size-20 mr-5 -ml-10 ">
+      <div className="relative size-10 md:size-20 mr-5  ">
         <Image fill src="/logo.webp" alt="Logo" />
       </div>
 
