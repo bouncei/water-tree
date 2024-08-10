@@ -26,9 +26,9 @@ const HomePage = () => {
 
         <div
           className="relative w-full"
-          style={{ height: `calc(${SECTION_HEIGHT}px + 100vh)` }}
+          // style={{ height: `calc(${SECTION_HEIGHT}px + 100vh)` }}
         >
-          <CenterParallaxImg />
+          {/* <CenterParallaxImg /> */}
           <LandingHero />
         </div>
 
