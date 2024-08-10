@@ -24,7 +24,7 @@ const LandingContentCard = ({
   return (
     <ListMotion className="flex flex-col gap-10 w-full">
       <div className="flex flex-col gap-7">
-        <div className="relative size-[50vh] h-[60vh]  w-full">
+        <div className="relative flex-shrink-0 size-96 ">
           <Image
             fill
             src={userImg}

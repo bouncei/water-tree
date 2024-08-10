@@ -75,7 +75,7 @@ const JobsPage = () => {
   return (
     <div className="h-full flex flex-col">
       <div className="flex flex-1 gap-y-3  flex-col">
-        <div className="py-14 md:py-16  flex flex-col items-center justify-center gap-10 border-b-2 border-b-primary/70 ">
+        <div className="py-14 md:py-16 flex flex-col items-center justify-center gap-10 border-b-2 border-b-primary/70 ">
           <div className="text-2xl font-medium ">
             Opportunities in the Leaftree Portfolio
           </div>
@@ -94,7 +94,7 @@ const JobsPage = () => {
         </div>
 
         <Tabs defaultValue="search" className="w-full">
-          <TabsList className="w-full border-b border-[#C8CFD5] bg-transparent  !justify-start !rounded-none !pb-0 !mb-0 space-x-3">
+          <TabsList className="w-full rounde border-b border-[#C8CFD5] bg-transparent  !justify-start !rounded-none !pb-0 !mb-0 space-x-3">
             <TabsTrigger
               value="search"
               className="data-[state=active]:bg-transparent data-[state=active]:border-b-2   data-[state=active]:border-b-primary data-[state=active]:rounded-none rounded-none transition ease-in hover:scale-105 hover:border-b-2 hover:border-b-primary/40"
@@ -111,12 +111,16 @@ const JobsPage = () => {
 
           <div>
             {components.map((component) => (
-              <TabsContent value={component} key={component} className="m-0">
+              <TabsContent
+                value={component}
+                key={component}
+                className="m-0 rounded-md"
+              >
                 {component === "search" ? (
                   // Search content
                   <>
                     <div
-                      className="py-8 px-4 bg-slate-100
+                      className="py-8 px-4 rounded-md bg-slate-100
           "
                     >
                       <SearchJobs
@@ -145,18 +149,18 @@ const JobsPage = () => {
                 ) : (
                   // Companies content
                   <>
-                    <div
-                      className="py-8 px-4 bg-slate-100
+                    {/* <div
+                      className="py-8 px-4 rou bg-slate-100
                   "
                     >
                       <ExploreCompanies
                       // handleSavingFilteredJobs={handleFilterArrays}
                       // parentJobsData={jobs || []}
                       />
-                    </div>
+                    </div> */}
 
                     <div className="py-3">
-                      Showing <b>{jobs.length}</b> Companies
+                      Showing <b>{companies.length}</b> Companies
                     </div>
 
                     <div className="grid text-sm grid-cols-1 gap-4 lg:gap-8 sm:grid-cols-2 lg:grid-cols-3 ">
