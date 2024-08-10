@@ -32,3 +32,11 @@ export type Team = {
   instagram: string;
   linkedin: string;
 };
+
+export type Portfolio = {
+  name: string;
+  description: string;
+  image: string;
+  projectLink: string;
+  tag: string;
+};
