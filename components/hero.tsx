@@ -3,44 +3,10 @@
 import React, { useState } from "react";
 import { Button } from "./ui/button";
 import Image from "next/image";
-import { Input } from "./ui/input";
-import { toast } from "sonner";
 import { ListMotion } from "./motion/list-motion";
 import Link from "next/link";
 
 const LandingHero = () => {
-  const [info, setInfo] = useState({
-    fullName: "",
-    email: "",
-    where: "", // How did you hear about us field
-  });
-  const [steps, setSteps] = useState<number>(1);
-  const [showForm, setShowForm] = useState<boolean>(false);
-
-  const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const { name, value } = event.target;
-    setInfo((prevInfo) => ({ ...prevInfo, [name]: value }));
-  };
-
-  const formSteps = (event: React.KeyboardEvent<HTMLInputElement>) => {
-    event.preventDefault();
-
-    // if
-    if (steps === 1) {
-      setSteps(2);
-    } else if (steps === 2) {
-      setSteps(3);
-    } else if (steps === 3) {
-      // Handle form submission here
-      // toast.success(`Form Submitted: ${JSON.stringify(info)}`);
-      toast.success("Form Submitted", {
-        description: JSON.stringify(info),
-      });
-      setSteps(1);
-      setShowForm(false);
-    }
-  };
-
   return (
     <div className=" flex items-center justify-center ">
       {/* Optional overlay for better text visibility */}
@@ -58,48 +24,18 @@ const LandingHero = () => {
               Being.
             </p>
 
-            {!showForm ? (
-              <Button
-                variant="default"
-                size="lg"
-                // onClick={() => setShowForm(true)}
-                asChild
-              >
-                <Link href="/how-it-works">How It Works</Link>
-              </Button>
-            ) : (
-              <Input
-                type={steps === 1 ? "text" : steps === 2 ? "email" : "text"}
-                name={
-                  steps === 1 ? "fullName" : steps === 2 ? "email" : "where"
-                }
-                value={
-                  steps === 1
-                    ? info.fullName
-                    : steps === 2
-                      ? info.email
-                      : info.where
-                }
-                placeholder={
-                  steps === 1
-                    ? "Enter your Full Name"
-                    : steps === 2
-                      ? "Enter your Email"
-                      : "Where did you hear about LeafTree?"
-                }
-                className="items-center text-center"
-                onChange={handleInputChange}
-                onKeyDown={(event) => {
-                  if (event.key === "Enter") {
-                    formSteps(event);
-                  }
-                }}
-              />
-            )}
+            <Button
+              variant="default"
+              size="lg"
+              // onClick={() => setShowForm(true)}
+              asChild
+            >
+              <Link href="/how-it-works">How It Works</Link>
+            </Button>
           </ListMotion>
         </div>
 
-        <div className=" hidden md:flex ml-auto   w-[50%] h-full  relative">
+        <div className=" hidden lg:flex flex-shrink-0   w-[50%] h-full  relative">
           <Image
             src="/hero1.webp"
             alt="hero image"
