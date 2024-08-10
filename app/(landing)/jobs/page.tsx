@@ -15,6 +15,7 @@ import TalentNetwork from "@/components/jobs/talent-network";
 import JobCard from "@/components/jobs/job-card";
 import { industries } from "@/constants";
 import CompanyCard from "@/components/jobs/company-card";
+import { ListMotion } from "@/components/motion/list-motion";
 
 const components = ["search", "companies", "jobs"];
 const initialFiltersState = {
@@ -120,7 +121,7 @@ const JobsPage = () => {
                   // Search content
                   <>
                     <div
-                      className="py-8 px-4 rounded-md bg-slate-100
+                      className="py-8 px-4 rounded-md bg-slate-100 w-full
           "
                     >
                       <SearchJobs
@@ -133,7 +134,7 @@ const JobsPage = () => {
                       Showing <b>{jobs.length}</b> Jobs
                     </div>
 
-                    <div className="flex flex-col gap-5 items-center w-full ">
+                    <div className="flex flex-col gap-5 items-center !w-full ">
                       {jobs.map((job, index) => (
                         <JobCard
                           key={index}

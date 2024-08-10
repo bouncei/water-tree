@@ -5,6 +5,7 @@ import { useMountedState } from "react-use";
 import { getTeamMembers } from "@/lib/team";
 import { Team } from "@/lib/types";
 import TeamCard from "@/components/cards/team-card";
+import { ListMotion } from "@/components/motion/list-motion";
 
 const TeamPage = () => {
   const isMounted = useMountedState();
@@ -38,11 +39,11 @@ const TeamPage = () => {
         <div className="text-2xl font-medium ">Meet the Team</div>
       </div>
 
-      <div className="grid text-sm grid-cols-1 gap-4 md:gap-8 md:grid-cols-2 py-4 md:py-8 ">
+      <ListMotion className="grid text-sm grid-cols-1 gap-4 md:gap-8 md:grid-cols-2 py-4 md:py-8 ">
         {team.map((member, index) => (
           <TeamCard key={index} member={member} />
         ))}
-      </div>
+      </ListMotion>
     </div>
   );
 };

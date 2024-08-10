@@ -1,6 +1,7 @@
+"use client";
+
 import PrincipleCard from "@/components/cards/principle-card";
-import CustomTitle from "@/components/custom-title";
-import Image from "next/image";
+import { ListMotion } from "@/components/motion/list-motion";
 import React from "react";
 
 const PrinciplesPage = () => {
@@ -9,7 +10,7 @@ const PrinciplesPage = () => {
       <div className="py-14 md:py-16  flex flex-col items-center justify-center gap-3 md:gap-5 border-b-2 border-b-primary/70 ">
         <div className="text-3xl  tracking-widest font-medium">Principles</div>
 
-        <div className="flex flex-col justify-end gap-10">
+        <ListMotion className="flex flex-col justify-end gap-10">
           {/* TRUTH */}
           <div className="flex flex-col sm:flex-row items-center gap-3 md:gap-5 justify-end w-full">
             <h3 className="text-lg lg:text-xl xl:text-xl font-medium">Truth</h3>
@@ -50,7 +51,7 @@ const PrinciplesPage = () => {
               imgPath="/anatomy.png"
             />
           </div>
-        </div>
+        </ListMotion>
       </div>
     </div>
   );

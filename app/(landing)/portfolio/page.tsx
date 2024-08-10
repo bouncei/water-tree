@@ -6,6 +6,7 @@ import PortfolioCard from "@/components/cards/portfolio-card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { getAllPortfolio } from "@/lib/portfolio";
 import { Portfolio } from "@/lib/types";
+import { ListMotion } from "@/components/motion/list-motion";
 
 const PortfolioPage = () => {
   const isMounted = useMountedState();
@@ -30,8 +31,6 @@ const PortfolioPage = () => {
   }, []);
 
   if (!isMounted) return null;
-
-  console.log("all portfolio", portfolio);
 
   // filter developing
   const developing = portfolio.filter((item) => item.tag === "developing");
