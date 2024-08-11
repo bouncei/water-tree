@@ -18,7 +18,7 @@ const PrincipleCard = ({ text, imgPath }: PrincipleCardProps) => {
       )}
     >
       <div className="text-white text-xs  md:text-sm">{text}</div>
-      <div className=" flex-shrink-0 relative size-20 md:size-32 lg:size-48">
+      <div className=" flex-shrink-0 relative size-32 lg:size-48">
         <Image fill alt={imgPath} className=" object-cover" src={imgPath} />
       </div>
     </div>
