@@ -4,30 +4,32 @@ import { motion, useInView } from "framer-motion";
 interface ListMotionProps {
   children: React.ReactNode;
   className?: string;
+  delay?: number;
 }
-
-const list = {
-  visible: {
-    opacity: 1,
-    transition: {
-      when: "beforeChildren",
-      staggerChildren: 0.5,
-    },
-  },
-  hidden: {
-    opacity: 0,
-  },
-};
-
-const item = {
-  visible: { opacity: 1, y: 0 },
-  hidden: { opacity: 0, y: 20 },
-};
 
 export const ListMotion: React.FC<ListMotionProps> = ({
   children,
   className,
+  delay,
 }) => {
+  const list = {
+    visible: {
+      opacity: 1,
+      transition: {
+        when: "beforeChildren",
+        staggerChildren: delay ?? 0.5,
+      },
+    },
+    hidden: {
+      opacity: 0,
+    },
+  };
+
+  const item = {
+    visible: { opacity: 1, y: 0 },
+    hidden: { opacity: 0, y: 20 },
+  };
+
   const ref = React.useRef(null);
   const isInView = useInView(ref, { once: true });
 

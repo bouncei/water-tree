@@ -13,7 +13,9 @@ const PrinciplesPage = () => {
         <ListMotion className="flex flex-col justify-end gap-10">
           {/* TRUTH */}
           <div className="flex flex-col sm:flex-row items-center gap-3 md:gap-5 justify-end w-full">
-            <h3 className="text-lg lg:text-xl xl:text-xl font-medium">Truth</h3>
+            <h3 className="text-xl lg:text-2xl xl:text-3xl font-medium">
+              Truth
+            </h3>
 
             <PrincipleCard
               text="Immutable & validated facts about the industry & other factors
@@ -25,7 +27,9 @@ const PrinciplesPage = () => {
 
           {/* FAITH */}
           <div className="flex flex-col sm:flex-row items-center gap-3 md:gap-5 justify-end w-full">
-            <h3 className="text-lg lg:text-xl xl:text-xl font-medium">Faith</h3>
+            <h3 className="text-xl lg:text-2xl xl:text-3xl font-medium">
+              Faith
+            </h3>
 
             <PrincipleCard
               text="Strong data-driven confidence in the concept, the business model
@@ -38,7 +42,7 @@ const PrinciplesPage = () => {
 
           {/* ANATOMY */}
           <div className="flex flex-col sm:flex-row items-center gap-3 md:gap-5 justify-end w-full">
-            <h3 className="text-lg lg:text-xl xl:text-xl font-medium">
+            <h3 className="text-xl lg:text-2xl xl:text-3xl font-medium">
               Anatomy
             </h3>
 
