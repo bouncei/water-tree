@@ -33,15 +33,20 @@ const LandingPageLayout = ({ children }: { children: React.ReactNode }) => {
 
       {/* Background Video */}
       {pathname === "/" && (
-        <video
-          ref={videoRef}
-          className="absolute top-0 left-0 h-full w-full object-cover filter brightness-75 contrast-125"
-          src="/hero.webm"
-          autoPlay
-          muted
-          loop
-          playsInline
-        />
+        <>
+          <video
+            ref={videoRef}
+            className="absolute top-0 left-0 h-full w-full object-cover filter brightness-75 contrast-125"
+            src="/hero.webm"
+            autoPlay
+            muted
+            loop
+            playsInline
+          />
+          {/* Gradient Overlay */}
+          {/* <div className="absolute bottom-0 left-0 h-1/3 w-full bg-gradient-to-t from-primary/20 to-transparent"></div> */}
+          <div className="inset-x-0 bottom-0 flex justify-center bg-gradient-to-t from-primary/30 -z-10 to-[#EBFFEB] pt-32 pb-8 pointer-events-none  absolute"></div>
+        </>
       )}
 
       <div
