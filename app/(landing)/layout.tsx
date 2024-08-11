@@ -4,10 +4,17 @@ import Footer from "@/components/footer";
 import NavBar from "@/components/navbar";
 import { cn } from "@/lib/utils";
 import { usePathname } from "next/navigation";
-import React from "react";
+import React, { useEffect, useRef } from "react";
 
 const LandingPageLayout = ({ children }: { children: React.ReactNode }) => {
   const pathname = usePathname();
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.playbackRate = 0.8; // Slow down the video playback to half speed
+    }
+  }, []);
 
   return (
     <main className="h-full overflow-auto  ">
@@ -24,8 +31,23 @@ const LandingPageLayout = ({ children }: { children: React.ReactNode }) => {
         ></div>
       </div> */}
 
+      {/* Background Video */}
+      {pathname === "/" && (
+        <video
+          ref={videoRef}
+          className="absolute top-0 left-0 h-full w-full object-cover filter brightness-75 contrast-125"
+          src="/hero.webm"
+          autoPlay
+          muted
+          loop
+          playsInline
+        />
+      )}
+
       <div
-        className={cn("mx-auto h-full max-w-screen-xl px-6 xl:p-0 relative")}
+        className={cn(
+          "mx-auto h-full  z-10  max-w-screen-xl bg-opacity-50 px-6 xl:p-0 relative"
+        )}
       >
         {pathname !== "/" && <NavBar />}
         {children}
