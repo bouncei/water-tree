@@ -13,7 +13,7 @@ const HomePage = () => {
 
   useEffect(() => {
     if (videoRef.current) {
-      videoRef.current.playbackRate = 0.8; // Slow down the video playback to half speed
+      videoRef.current.playbackRate = 0.7; // Slow down the video playback to half speed
     }
   }, []);
 
@@ -23,7 +23,7 @@ const HomePage = () => {
       <video
         ref={videoRef}
         // className="absolute top-0 left-0 h-full w-full object-cover filter brightness-75 contrast-125"
-        className="parllax__background w-full object-contain filter brightness-75 contrast-125"
+        className="parllax__background w-full object-cover filter brightness-75 contrast-125"
         src="/hero.webm"
         autoPlay
         muted
