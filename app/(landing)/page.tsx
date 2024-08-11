@@ -1,25 +1,46 @@
+"use client";
+
+import React, { useEffect, useRef } from "react";
+import { Parallax, ParallaxLayer } from "@react-spring/parallax";
+
 import Footer from "@/components/footer";
 import LandingHero from "@/components/hero";
 import LandingContent from "@/components/landing-content";
 import NavBar from "@/components/navbar";
-import React from "react";
 
 const HomePage = () => {
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    if (videoRef.current) {
+      videoRef.current.playbackRate = 0.8; // Slow down the video playback to half speed
+    }
+  }, []);
+
   return (
-    <div className="flex flex-1 flex-col ">
-      <div className="h-full flex flex-col  relative">
-        <NavBar />
+    <div>
+      {/* <div className="parllax__background" /> */}
+      <video
+        ref={videoRef}
+        // className="absolute top-0 left-0 h-full w-full object-cover filter brightness-75 contrast-125"
+        className="parllax__background w-full object-contain filter brightness-75 contrast-125"
+        src="/hero.webm"
+        autoPlay
+        muted
+        loop
+        playsInline
+      />
+      <Parallax pages={3.5} className=" ">
+        <ParallaxLayer sticky={{ start: 0, end: 3.5 }} offset={0} speed={0.5}>
+          <NavBar />
+        </ParallaxLayer>
 
-        <div
-          className="relative w-full"
-          // style={{ height: `calc(${SECTION_HEIGHT}px + 100vh)` }}
-        >
+        <ParallaxLayer speed={0.5}>
           <LandingHero />
-        </div>
-
-        <LandingContent />
-        <Footer />
-      </div>
+          <LandingContent />
+          <Footer />
+        </ParallaxLayer>
+      </Parallax>
     </div>
   );
 };

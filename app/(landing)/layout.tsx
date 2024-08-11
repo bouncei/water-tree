@@ -32,7 +32,7 @@ const LandingPageLayout = ({ children }: { children: React.ReactNode }) => {
       </div> */}
 
       {/* Background Video */}
-      {pathname === "/" && (
+      {/* {pathname === "/" && (
         <>
           <video
             ref={videoRef}
@@ -43,15 +43,15 @@ const LandingPageLayout = ({ children }: { children: React.ReactNode }) => {
             loop
             playsInline
           />
-          {/* Gradient Overlay */}
-          {/* <div className="absolute bottom-0 left-0 h-1/3 w-full bg-gradient-to-t from-primary/20 to-transparent"></div> */}
           <div className="inset-x-0 bottom-0 flex justify-center bg-gradient-to-t from-primary/30 -z-10 to-[#EBFFEB] pt-32 pb-8 pointer-events-none  absolute"></div>
         </>
-      )}
+      )} */}
 
       <div
         className={cn(
-          "mx-auto h-full  z-10  max-w-screen-xl bg-opacity-50 px-6 xl:p-0 relative"
+          "",
+          pathname !== "/" &&
+            "mx-auto h-full  z-10  max-w-screen-xl bg-opacity-50 px-6 xl:p-0 relative"
         )}
       >
         {pathname !== "/" && <NavBar />}

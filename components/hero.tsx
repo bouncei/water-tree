@@ -8,7 +8,7 @@ import Link from "next/link";
 
 const LandingHero = () => {
   return (
-    <div className=" flex items-center justify-center ">
+    <div className=" flex items-center justify-center mx-auto     max-w-screen-xl  px-6 xl:p-0 ">
       {/* Optional overlay for better text visibility */}
       {/* <div className="absolute inset-0 bg-black opacity-0 lg:opacity-20"></div> */}
       <div className="h-screen py-4 md:py-20  flex items-center justify-center gap-10  ">
