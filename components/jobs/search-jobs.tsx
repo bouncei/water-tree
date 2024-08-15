@@ -61,7 +61,7 @@ const SearchJobs = ({
     <div className="flex flex-col gap-y-5">
       <div className="bg-white w-full p-5 rounded-md flex items center gap-3">
         {/* SEARCH INPUT */}
-        <div className="w-[70%]  relative rounded-md border flex items-center gap-2 px-3">
+        <div className="w-[70%]  relative rounded-2xl border flex items-center gap-2 px-3">
           <Search className="size-4 " />
 
           <Input
@@ -69,7 +69,7 @@ const SearchJobs = ({
             placeholder="Search"
             value={searchInput}
             onChange={(e) => setSearchInput(e.target.value)}
-            className="w-full border-none focus-visible:ring-offset-0 focus-visible:ring-0"
+            className="w-full border-none focus-visible:ring-offset-0 focus-visible:ring-0 "
           />
         </div>
 
@@ -77,7 +77,7 @@ const SearchJobs = ({
         <div className="w-[30%]">
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
-              <Button variant="outline" className="w-full">
+              <Button variant="outline" className="w-full rounded-2xl">
                 <Wifi className="size-5 rotate-45 mr-2" />
                 {!remoteFilter && !onsiteFilter && "Remote & On-site"}
                 {remoteFilter && onsiteFilter && "Remote & On-site"}

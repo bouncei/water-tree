@@ -121,7 +121,7 @@ const JobsPage = () => {
                   // Search content
                   <>
                     <div
-                      className="py-8 px-4 rounded-md bg-slate-100 w-full
+                      className="py-8 px-4 rounded-md  w-full
           "
                     >
                       <SearchJobs
@@ -151,7 +151,7 @@ const JobsPage = () => {
                   // Companies content
                   <>
                     {/* <div
-                      className="py-8 px-4 rou bg-slate-100
+                      className="py-8 px-4 rou 
                   "
                     >
                       <ExploreCompanies

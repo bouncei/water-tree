@@ -67,7 +67,7 @@ const LandingContent = () => {
           </div>
         </div>
 
-        <CustomTitle text="For founders, by founders " />
+        {/* <CustomTitle text="For founders, by founders " />
 
         <div className="flex justify-between gap-20">
           <ListMotion className="w-full flex flex-col gap-20">
@@ -98,6 +98,147 @@ const LandingContent = () => {
               />
             ))}
           </ListMotion>
+        </div> */}
+        <div className="h-full flex flex-col">
+          <div className="py-14 md:py-16  flex flex-col items-center justify-center gap-3 md:gap-5  ">
+            <div className="text-2xl font-semibold">Our Guide</div>
+
+            <div className="text-center text-sm lg:text-base">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
+              temporibus dolores inventore dicta, aliquid voluptatibus, sunt
+              magni doloremque ullam autem est tempore ex reiciendis iste
+              incidunt? Vel numquam doloremque obcaecati incidunt et, dolor sit
+              magni recusandae ab delectus consectetur ratione dignissimos
+              dolores similique tenetur minus. Blanditiis numquam unde saepe
+              dolore?
+            </div>
+
+            <div className="flex py-12 lg:py-20 xl:py-32 flex-col justify-center gap-20 xl:gap-32 max-w-screen-lg">
+              {/* DESIGN */}
+              <ListMotion className="w-full flex flex-col md:flex-row gap-12 lg:gap-20 xl:gap-32  items-center">
+                <div className="relative flex-shrink-0 size-72 xl:size-96 ">
+                  <Image
+                    fill
+                    src="/DESIGN.png"
+                    alt="design image"
+                    className=" object-cover object-top "
+                  />
+                </div>
+
+                <ListMotion
+                  delay={0.7}
+                  className="flex flex-col gap-3 items-center text-center md:text-left md:items-start"
+                >
+                  <div className="text-lg lg:text-xl text-primary/70 font-medium">
+                    Design
+                  </div>
+                  <div className="text-xl lg:text-2xl font-semibold leading-relaxed">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Adipisci molestiae
+                  </div>
+                  <div className="text-sm lg:text-base">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Amet harum minima quaerat reiciendis non voluptatum debitis
+                    a eum expedita quod quo corrupti quisquam, asperiores ex,
+                    fuga dignissimos in quos dolorem.
+                  </div>
+                </ListMotion>
+              </ListMotion>
+
+              {/* SELECTION */}
+              <ListMotion className="w-full flex flex-col md:flex-row-reverse gap-12 lg:gap-20 xl:gap-32  items-center">
+                <div className="relative flex-shrink-0 size-72 xl:size-96 ">
+                  <Image
+                    fill
+                    src="/SELECTION.png"
+                    alt="selection image"
+                    className=" object-cover object-top "
+                  />
+                </div>
+
+                <ListMotion
+                  delay={0.7}
+                  className="flex flex-col gap-3 items-center text-center md:text-left md:items-start"
+                >
+                  <div className="text-lg lg:text-xl text-primary/70 font-medium">
+                    Selection
+                  </div>
+                  <div className="text-xl lg:text-2xl font-semibold leading-relaxed">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Adipisci molestiae
+                  </div>
+                  <div className="text-sm lg:text-base">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Amet harum minima quaerat reiciendis non voluptatum debitis
+                    a eum expedita quod quo corrupti quisquam, asperiores ex,
+                    fuga dignissimos in quos dolorem.
+                  </div>
+                </ListMotion>
+              </ListMotion>
+
+              {/* ACCESS */}
+              <ListMotion className="w-full flex flex-col md:flex-row gap-12 lg:gap-20 xl:gap-32  items-center">
+                <div className="relative flex-shrink-0 size-72 xl:size-96 ">
+                  <Image
+                    fill
+                    src="/ACCESS.png"
+                    alt="investment image"
+                    className=" object-cover  "
+                  />
+                </div>
+
+                <ListMotion
+                  delay={0.7}
+                  className="flex flex-col gap-3 items-center text-center md:text-left md:items-start"
+                >
+                  <div className="text-lg lg:text-xl text-primary/70 font-medium">
+                    Access
+                  </div>
+                  <div className="text-xl lg:text-2xl font-semibold leading-relaxed">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Adipisci molestiae
+                  </div>
+                  <div className="text-sm lg:text-base">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Amet harum minima quaerat reiciendis non voluptatum debitis
+                    a eum expedita quod quo corrupti quisquam, asperiores ex,
+                    fuga dignissimos in quos dolorem.
+                  </div>
+                </ListMotion>
+              </ListMotion>
+
+              {/* INVESTMENT */}
+              <ListMotion className="w-full flex flex-col md:flex-row-reverse gap-12 lg:gap-20 xl:gap-32  items-center">
+                <div className="relative flex-shrink-0 size-72 xl:size-96 ">
+                  <Image
+                    fill
+                    src="/INVESTMENT.png"
+                    alt="investment image"
+                    className=" object-cover object-top "
+                  />
+                </div>
+
+                <ListMotion
+                  delay={0.7}
+                  className="flex flex-col gap-3 items-center text-center md:text-left md:items-start"
+                >
+                  <div className="text-lg lg:text-xl text-primary/70 font-medium">
+                    Investment
+                  </div>
+                  <div className="text-xl lg:text-2xl font-semibold leading-relaxed">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Adipisci molestiae
+                  </div>
+                  <div className="text-sm lg:text-base">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Amet harum minima quaerat reiciendis non voluptatum debitis
+                    a eum expedita quod quo corrupti quisquam, asperiores ex,
+                    fuga dignissimos in quos dolorem.
+                  </div>
+                </ListMotion>
+              </ListMotion>
+            </div>
+          </div>
         </div>
       </div>
     </div>

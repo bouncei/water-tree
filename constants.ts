@@ -11,10 +11,10 @@ export const routes = [
     title: "Portfolio",
     href: "/portfolio",
   },
-  {
-    title: "How It Works",
-    href: "/how-it-works",
-  },
+  // {
+  //   title: "How It Works",
+  //   href: "/how-it-works",
+  // },
 
   {
     title: "Jobs",

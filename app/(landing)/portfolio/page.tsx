@@ -55,19 +55,19 @@ const PortfolioPage = () => {
               <TabsList className="grid grid-cols-3 w-full gap-3 lg:max-w-[50vw] bg-transparent">
                 <TabsTrigger
                   value="all"
-                  className="data-[state=active]:bg-primary/70 text-black data-[state=active]:text-white border border-primary/60"
+                  className="data-[state=active]:bg-primary/70 rounded-2xl text-black data-[state=active]:text-white border border-primary/60"
                 >
                   All
                 </TabsTrigger>
                 <TabsTrigger
                   value="developing"
-                  className="data-[state=active]:bg-primary/70 text-black data-[state=active]:text-white border border-primary/60"
+                  className="data-[state=active]:bg-primary/70 rounded-2xl text-black data-[state=active]:text-white border border-primary/60"
                 >
                   Developing
                 </TabsTrigger>
                 <TabsTrigger
                   value="funded"
-                  className="data-[state=active]:bg-primary/70 text-black data-[state=active]:text-white border border-primary/60"
+                  className="data-[state=active]:bg-primary/70 rounded-2xl text-black data-[state=active]:text-white border border-primary/60"
                 >
                   Funded
                 </TabsTrigger>

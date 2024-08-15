@@ -12,8 +12,8 @@ const PrinciplesPage = () => {
 
         <div className="flex flex-col justify-end gap-10">
           {/* TRUTH */}
-          <div className="flex flex-col sm:flex-row items-center gap-3 md:gap-5 justify-end w-full">
-            <h3 className="text-xl lg:text-2xl xl:text-3xl font-medium">
+          <div className="flex flex-col lg:flex-row items-center gap-3 md:gap-5 justify-end w-full">
+            <h3 className="text-xl lg:text-3xl xl:text-4xl font-medium">
               Truth
             </h3>
 
@@ -26,8 +26,8 @@ const PrinciplesPage = () => {
           </div>
 
           {/* FAITH */}
-          <div className="flex flex-col sm:flex-row items-center gap-3 md:gap-5 justify-end w-full">
-            <h3 className="text-xl lg:text-2xl xl:text-3xl font-medium">
+          <div className="flex flex-col lg:flex-row items-center gap-3 md:gap-5 justify-end w-full">
+            <h3 className="text-xl lg:text-3xl xl:text-4xl font-medium">
               Faith
             </h3>
 
@@ -41,8 +41,8 @@ const PrinciplesPage = () => {
           </div>
 
           {/* AUTONOMY */}
-          <div className="flex flex-col sm:flex-row items-center gap-3 md:gap-5 justify-end w-full">
-            <h3 className="text-xl lg:text-2xl xl:text-3xl font-medium">
+          <div className="flex flex-col lg:flex-row items-center gap-3 md:gap-5 justify-end w-full">
+            <h3 className="text-xl lg:text-3xl xl:text-4xl font-medium">
               Autonomy
             </h3>
 

@@ -12,14 +12,19 @@ const PrincipleCard = ({ text, imgPath }: PrincipleCardProps) => {
   return (
     <div
       className={cn(
-        "bg-primary/80  rounded-t-xl sm:rounded-t-full sm:rounded-tr-none sm:rounded-l-full w-full  p-5 flex flex-col-reverse sm:flex-row  items-center text-sm"
+        "bg-primary/80  rounded-t-xl lg:rounded-t-full lg:rounded-tr-none lg:rounded-l-full w-full  p-5 lg:py-0 lg:pr-0 flex flex-col-reverse lg:flex-row gap-5 lg:gap-0  items-center text-sm"
         // imgPath === "/faith.png" && "max-w-[70vw] lg:max-w-screen-lg",
         // imgPath === "/anatomy.png" && "max-w-screen lg:max-w-screen-xl "
       )}
     >
-      <div className="text-white text-xs  md:text-sm">{text}</div>
-      <div className=" flex-shrink-0 relative size-32 lg:size-48">
-        <Image fill alt={imgPath} className=" object-cover" src={imgPath} />
+      <div className="text-white text-xs  md:text-sm lg:pr-5">{text}</div>
+      <div className=" flex-shrink-0 z-10 relative size-44  lg:size-48">
+        <Image
+          fill
+          alt={imgPath}
+          className=" object-cover lg:bg-[#EBFFEB]"
+          src={imgPath}
+        />
       </div>
     </div>
   );

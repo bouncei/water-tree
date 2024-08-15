@@ -15,13 +15,13 @@ const LandingHero = () => {
         <div className="relative  w-full lg:w-[50%] ">
           <ListMotion className="w-full text-left space-y-4 sm:space-y-8 py-8">
             <div className="text-4xl lg:text-5xl xl:text-6xl font-bold relative">
-              Investing in Human/Design-Centric{" "}
+              Investing in Design-Centric{" "}
               <span className="text-primary">Innovations</span>
             </div>
             <p className=" text-sm sm:text-base lg::max-w-2xl mr-auto">
-              We curate ventures based on their: Purpose (Design), Scalability,
-              Sustainability amounting in/leading to Human-Centric Approach/Well
-              Being.
+              We curate ventures based on their: Purpose, Scalability &
+              Sustainability leading to the development of products that
+              stimulate Well Being.
             </p>
 
             <Button

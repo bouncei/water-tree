@@ -9,8 +9,8 @@ import { Toaster } from "@/components/ui/sonner";
 const montserrat = Montserrat({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Leaf Tree",
-  description: "Investing in Human/Design-Centric Innovations.",
+  title: "LeafTree",
+  description: "Investing in Design-Centric Innovations.",
 };
 
 export default function RootLayout({
