@@ -28,7 +28,7 @@ const OrganizationPage = () => {
 
         <div className="flex mt-16  flex-col justify-center gap-20 xl:gap-32 max-w-screen-lg">
           {/* DESIGN */}
-          <ListMotion className="w-full flex flex-col md:flex-row gap-12 lg:gap-20 xl:gap-32  items-start">
+          {/* <ListMotion className="w-full flex flex-col md:flex-row gap-12 lg:gap-20 xl:gap-32  items-start">
             <div className="relative flex-shrink-0 size-72 xl:size-96 ">
               <Image
                 fill
@@ -56,7 +56,7 @@ const OrganizationPage = () => {
                 dignissimos in quos dolorem.
               </div>
             </ListMotion>
-          </ListMotion>
+          </ListMotion> */}
         </div>
       </div>
     </div>

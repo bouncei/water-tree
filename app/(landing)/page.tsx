@@ -52,7 +52,7 @@ const HomePage = () => {
     <div className="relative h-full">
       {/* <div className="parllax__background" /> */}
 
-      <div className="fixed top-0 left-0 -z-20  h-full w-full">
+      <div className="fixed top-0 left-0 -z-10  h-full w-full">
         <video
           ref={videoRef}
           // className="absolute top-0 left-0 h-full w-full object-cover filter brightness-75 contrast-125"
