@@ -21,7 +21,6 @@ import { cn } from "@/lib/utils";
 
 const NavBar = () => {
   const pathname = usePathname();
-  console.log("path", pathname);
 
   return (
     <div

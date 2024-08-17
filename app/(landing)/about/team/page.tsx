@@ -31,8 +31,6 @@ const TeamPage = () => {
 
   if (!isMounted) return null;
 
-  console.log("all team members", team);
-
   return (
     <div className="h-full flex flex-col">
       <div className="py-14 md:py-16  flex flex-col items-center justify-center gap-10 border-b-2 border-b-primary/70 ">

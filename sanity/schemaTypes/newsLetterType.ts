@@ -1,6 +1,6 @@
 import { defineType } from "sanity";
 
-export const contactType = defineType({
+export const newsLetterType = defineType({
   name: "newsletter",
   type: "document",
   fields: [

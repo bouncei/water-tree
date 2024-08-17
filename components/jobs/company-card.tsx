@@ -37,8 +37,6 @@ const CompanyCard = ({
     return filters;
   }, [companyJobs]);
 
-  console.log("All jobs", companyJobs);
-  console.log("Filters", filters);
   return (
     <Card className="w-full p-4 gap-3 border-black/5 flex flex-col  hover:shadow-md transition">
       <Link href={website} target="_blank" className="flex items-start gap-2">
