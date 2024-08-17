@@ -41,7 +41,7 @@ const PortfolioPage = () => {
   return (
     <div className="h-full flex flex-col">
       <div className="py-14 md:py-16  flex flex-col items-center  w-full justify-center gap-3 md:gap-5 border-b-2 border-b-primary/70 ">
-        <div className="text-3xl tracking-widest font-meduim">
+        <div className="text-4xl tracking-widest font-meduim">
           Our Portfolio
         </div>
 
@@ -75,7 +75,7 @@ const PortfolioPage = () => {
             </div>
             <TabsContent
               value="all"
-              className="grid text-sm grid-cols-1 gap-4 lg:gap-8 sm:grid-cols-2 lg:grid-cols-3"
+              className="grid text-base grid-cols-1 gap-4 lg:gap-8 sm:grid-cols-2 lg:grid-cols-3"
             >
               {portfolio.map((item, index) => (
                 <PortfolioCard
@@ -91,7 +91,7 @@ const PortfolioPage = () => {
             </TabsContent>
             <TabsContent
               value="developing"
-              className="grid text-sm grid-cols-1 gap-4 lg:gap-8 sm:grid-cols-2 lg:grid-cols-3"
+              className="grid text-base grid-cols-1 gap-4 lg:gap-8 sm:grid-cols-2 lg:grid-cols-3"
             >
               {developing.map((item, index) => (
                 <PortfolioCard
@@ -108,7 +108,7 @@ const PortfolioPage = () => {
 
             <TabsContent
               value="funded"
-              className="grid text-sm grid-cols-1 gap-4 lg:gap-8 sm:grid-cols-2 lg:grid-cols-3"
+              className="grid text-base grid-cols-1 gap-4 lg:gap-8 sm:grid-cols-2 lg:grid-cols-3"
             >
               {funded.map((item, index) => (
                 <PortfolioCard

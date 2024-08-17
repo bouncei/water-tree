@@ -77,19 +77,19 @@ const JobsPage = () => {
     <div className="h-full flex flex-col">
       <div className="flex flex-1 gap-y-3  flex-col">
         <div className="py-14 md:py-16 flex flex-col items-center justify-center gap-10 border-b-2 border-b-primary/70 ">
-          <div className="text-2xl font-medium ">
+          <div className="text-3xl font-medium ">
             Opportunities in the Leaftree Portfolio
           </div>
 
           <div className="flex items-center gap-7">
             <div className="flex flex-col items-center">
-              <div className="text-2xl font-medium">{companies?.length}</div>
-              <div className="text-sm">COMPANIES</div>
+              <div className="text-3xl font-medium">{companies?.length}</div>
+              <div className="text-base">COMPANIES</div>
             </div>
 
             <div className="flex flex-col items-center">
-              <div className="text-2xl font-medium">{jobs?.length}</div>
-              <div className="text-sm">JOBS</div>
+              <div className="text-3xl font-medium">{jobs?.length}</div>
+              <div className="text-base">JOBS</div>
             </div>
           </div>
         </div>
@@ -164,7 +164,7 @@ const JobsPage = () => {
                       Showing <b>{companies.length}</b> Companies
                     </div>
 
-                    <div className="grid text-sm grid-cols-1 gap-4 lg:gap-8 sm:grid-cols-2 lg:grid-cols-3 ">
+                    <div className="grid text-base grid-cols-1 gap-4 lg:gap-8 sm:grid-cols-2 lg:grid-cols-3 ">
                       {companies.map((company, index) => (
                         <CompanyCard
                           key={index}

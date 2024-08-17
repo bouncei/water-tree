@@ -46,7 +46,7 @@ const JobCard = ({
             <div className="text-lg font-medium"> {title}</div>
             <div className="font-medium text-foreground">{company.name}</div>
 
-            <div className="flex items-center gap-1 text-sm text-gray-500">
+            <div className="flex items-center gap-1 text-base text-gray-500">
               <div>{company.locations}</div>
               <div className="">{formatPostedDate(postedDate)}</div>
             </div>

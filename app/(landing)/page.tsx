@@ -32,15 +32,15 @@ const HomePage = () => {
     };
   }, []);
 
-  useEffect(() => {
-    if (videoRef.current) {
-      if (isScrolling) {
-        videoRef.current.play();
-      } else {
-        videoRef.current.pause();
-      }
-    }
-  }, [isScrolling]);
+  // useEffect(() => {
+  //   if (videoRef.current) {
+  //     if (isScrolling) {
+  //       videoRef.current.play();
+  //     } else {
+  //       videoRef.current.pause();
+  //     }
+  //   }
+  // }, [isScrolling]);
 
   useEffect(() => {
     if (videoRef.current) {
@@ -57,9 +57,10 @@ const HomePage = () => {
           ref={videoRef}
           // className="absolute top-0 left-0 h-full w-full object-cover filter brightness-75 contrast-125"
           // className="parllax__background w-full object-cover filter brightness-75 contrast-125"
-          className="w-full h-full object-contain  filter brightness-75 contrast-125"
-          src="/hero.webm"
+          className="w-full h-full object-cover  filter brightness-75 contrast-125"
+          src="/hero-new-1.webm"
           muted
+          autoPlay
           loop
           playsInline
         />

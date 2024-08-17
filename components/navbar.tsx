@@ -26,8 +26,9 @@ const NavBar = () => {
   return (
     <div
       className={cn(
-        "sticky top-0  bg-transparent  flex items-center justify-between  z-20  bg-opacity-30 backdrop-blur-sm ",
-        pathname === "/" && "mx-auto     max-w-screen-xl  px-6 xl:p-0 "
+        "sticky top-0  bg-transparent  flex items-center justify-between  z-20  bg-opacity-30 backdrop-blur-sm py-5 xl:py-0 ",
+        pathname === "/" &&
+          "mx-auto     max-w-screen-2xl  px-6 xl:p-0  xl:py-0 "
       )}
     >
       <Logo />
@@ -55,7 +56,7 @@ const NavBar = () => {
                                   key={sub.href}
                                   href={sub.href}
                                   className={cn(
-                                    "text-sm border-b hover:bg-primary/40 hover:border-b-2  transition duration-300 py-3 px-6 ease-in",
+                                    "text-base border-b hover:bg-primary/40 hover:border-b-2  transition duration-300 py-3 px-6 ease-in",
                                     pathname === route.href
                                       ? "border-b-2 border-b-primary/70  "
                                       : "hover:border-b-2 hover:border-b-primary/40 "
@@ -95,13 +96,13 @@ const NavBar = () => {
       </div>
 
       {/* Hanburger menu */}
-      <Button
+      {/* <Button
         className=" lg:hidden hover:bg-primary/40 "
         variant="ghost"
         size="icon"
       >
         <Menu className="size-6" color="#000" />
-      </Button>
+      </Button> */}
     </div>
   );
 };

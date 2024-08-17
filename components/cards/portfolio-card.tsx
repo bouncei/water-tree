@@ -28,7 +28,7 @@ const PortfolioCard = ({
 
       <div className=" group-hover:absolute w-full h-full group-hover:bg-primary/60 inset-0 transition ease-in duration-200 ">
         <div className="flex flex-col items-center h-full text-white justify-center gap-5 lg:gap-8">
-          <h2 className="text-2xl font-bold tracking-wider ">{title}</h2>
+          <h2 className="text-3xl font-bold tracking-wider ">{title}</h2>
           <p className="">{description}</p>
         </div>
       </div>

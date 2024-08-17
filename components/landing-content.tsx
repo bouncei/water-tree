@@ -37,12 +37,11 @@ const contentDummyData = [
 
 const LandingContent = () => {
   return (
-    <div className="mx-auto     max-w-screen-xl  px-6 xl:p-0">
+    <div className="mx-auto     max-w-screen-2xl  px-6 xl:p-0">
       <div className="py-14 md:py-20 flex flex-col gap-20 border-b-2 border-b-primary/70 ">
-        <CustomTitle text="Lorem ipsum dolor sit amet consectetur adipisicing elit " />
-
-        <div className="flex items-center justify-between">
+        <div className=" hidden md:flex items-center flex-col-reverse md:flex-row  justify-between">
           <ListMotion className="flex w-[50%] flex-col gap-20">
+            <CustomTitle text="Lorem ipsum dolor sit amet consectetur adipisicing elit " />
             <div>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
               corrupti laborum accusantium est harum, nam quod sint praesentium
@@ -50,20 +49,10 @@ const LandingContent = () => {
               sunt nostrum, similique architecto praesentium iure earum sequi
               est qui eligendi, beatae quos debitis id consequatur voluptates?
             </div>
-            <div>
-              <Button variant="default" size="lg">
-                Our Approach
-              </Button>
-            </div>
           </ListMotion>
 
-          <div className="relative w-[45%] flex-shrink-0 h-full aspect-square">
-            <Image
-              src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="approach"
-              className="rounded-full"
-              fill
-            />
+          <div className="relative w-[45%] -mr-28 h-full aspect-square">
+            <Image src="/9.png" alt="approach" className="" fill />
           </div>
         </div>
 
@@ -99,11 +88,11 @@ const LandingContent = () => {
             ))}
           </ListMotion>
         </div> */}
-        <div className="h-full flex flex-col">
+        <div className="h-full flex flex-col" id="how-it-works">
           <div className="py-14 md:py-16  flex flex-col items-center justify-center gap-3 md:gap-5  ">
-            <div className="text-2xl font-semibold">Our Guide</div>
+            <div className="text-3xl font-semibold">Our Guide</div>
 
-            <div className="text-center text-sm lg:text-base">
+            <div className="text-center text-base lg:text-lg">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
               temporibus dolores inventore dicta, aliquid voluptatibus, sunt
               magni doloremque ullam autem est tempore ex reiciendis iste
@@ -129,14 +118,14 @@ const LandingContent = () => {
                   delay={0.7}
                   className="flex flex-col gap-3 items-center text-center md:text-left md:items-start"
                 >
-                  <div className="text-lg lg:text-xl text-primary/70 font-medium">
+                  <div className="text-lg lg:text-2xl text-primary/70 font-medium">
                     Design
                   </div>
-                  <div className="text-xl lg:text-2xl font-semibold leading-relaxed">
+                  <div className="text-2xl lg:text-3xl font-semibold leading-relaxed">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Adipisci molestiae
                   </div>
-                  <div className="text-sm lg:text-base">
+                  <div className="text-base lg:text-lg">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Amet harum minima quaerat reiciendis non voluptatum debitis
                     a eum expedita quod quo corrupti quisquam, asperiores ex,
@@ -160,14 +149,14 @@ const LandingContent = () => {
                   delay={0.7}
                   className="flex flex-col gap-3 items-center text-center md:text-left md:items-start"
                 >
-                  <div className="text-lg lg:text-xl text-primary/70 font-medium">
+                  <div className="text-lg lg:text-2xl text-primary/70 font-medium">
                     Selection
                   </div>
-                  <div className="text-xl lg:text-2xl font-semibold leading-relaxed">
+                  <div className="text-2xl lg:text-3xl font-semibold leading-relaxed">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Adipisci molestiae
                   </div>
-                  <div className="text-sm lg:text-base">
+                  <div className="text-base lg:text-lg">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Amet harum minima quaerat reiciendis non voluptatum debitis
                     a eum expedita quod quo corrupti quisquam, asperiores ex,
@@ -191,14 +180,14 @@ const LandingContent = () => {
                   delay={0.7}
                   className="flex flex-col gap-3 items-center text-center md:text-left md:items-start"
                 >
-                  <div className="text-lg lg:text-xl text-primary/70 font-medium">
+                  <div className="text-lg lg:text-2xl text-primary/70 font-medium">
                     Access
                   </div>
-                  <div className="text-xl lg:text-2xl font-semibold leading-relaxed">
+                  <div className="text-2xl lg:text-3xl font-semibold leading-relaxed">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Adipisci molestiae
                   </div>
-                  <div className="text-sm lg:text-base">
+                  <div className="text-base lg:text-lg">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Amet harum minima quaerat reiciendis non voluptatum debitis
                     a eum expedita quod quo corrupti quisquam, asperiores ex,
@@ -222,14 +211,14 @@ const LandingContent = () => {
                   delay={0.7}
                   className="flex flex-col gap-3 items-center text-center md:text-left md:items-start"
                 >
-                  <div className="text-lg lg:text-xl text-primary/70 font-medium">
+                  <div className="text-lg lg:text-2xl text-primary/70 font-medium">
                     Investment
                   </div>
-                  <div className="text-xl lg:text-2xl font-semibold leading-relaxed">
+                  <div className="text-2xl lg:text-3xl font-semibold leading-relaxed">
                     Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                     Adipisci molestiae
                   </div>
-                  <div className="text-sm lg:text-base">
+                  <div className="text-base lg:text-lg">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                     Amet harum minima quaerat reiciendis non voluptatum debitis
                     a eum expedita quod quo corrupti quisquam, asperiores ex,

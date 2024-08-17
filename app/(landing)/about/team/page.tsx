@@ -36,10 +36,10 @@ const TeamPage = () => {
   return (
     <div className="h-full flex flex-col">
       <div className="py-14 md:py-16  flex flex-col items-center justify-center gap-10 border-b-2 border-b-primary/70 ">
-        <div className="text-2xl font-medium ">Meet the Team</div>
+        <div className="text-3xl font-medium ">Meet the Team</div>
       </div>
 
-      <ListMotion className="grid text-sm grid-cols-1 gap-4 md:gap-8 md:grid-cols-2 py-4 md:py-8 ">
+      <ListMotion className="grid text-base grid-cols-1 gap-4 md:gap-8 md:grid-cols-2 py-4 md:py-8 ">
         {team.map((member, index) => (
           <TeamCard key={index} member={member} />
         ))}

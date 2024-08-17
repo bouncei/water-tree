@@ -5,14 +5,15 @@
 // import { draftMode } from "next/headers";
 import { createClient, type QueryOptions, type QueryParams } from "next-sanity";
 
-import { apiVersion, dataset, projectId } from "../env";
-import { token } from "./token";
+import { apiVersion, dataset, projectId, token } from "../env";
+// import { token } from "./token";
 
 export const client = createClient({
   projectId,
   dataset,
   apiVersion,
-  useCdn: true,
+  token,
+  useCdn: false,
   stega: {
     enabled: process.env.NEXT_PUBLIC_VERCEL_ENV === "preview",
     studioUrl: "/studio",

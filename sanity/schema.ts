@@ -4,7 +4,8 @@ import { jobType } from "./schemaTypes/jobType";
 import { companyType } from "./schemaTypes/companyType";
 import { teamType } from "./schemaTypes/teamType";
 import { portfolioType } from "./schemaTypes/portfolioType";
+import { contactType } from "./schemaTypes/contactType";
 
 export const schema: { types: SchemaTypeDefinition[] } = {
-  types: [jobType, companyType, teamType, portfolioType],
+  types: [jobType, companyType, teamType, portfolioType, contactType],
 };

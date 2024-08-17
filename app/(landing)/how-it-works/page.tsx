@@ -8,9 +8,9 @@ const HowPage = () => {
   return (
     <div className="h-full flex flex-col">
       <div className="py-14 md:py-16  flex flex-col items-center justify-center gap-3 md:gap-5 border-b-2 border-b-primary/70 ">
-        <div className="text-2xl font-semibold">Our Guide</div>
+        <div className="text-3xl font-semibold">Our Guide</div>
 
-        <div className="text-center text-sm lg:text-base">
+        <div className="text-center text-base lg:text-lg">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat,
           temporibus dolores inventore dicta, aliquid voluptatibus, sunt magni
           doloremque ullam autem est tempore ex reiciendis iste incidunt? Vel
@@ -35,14 +35,14 @@ const HowPage = () => {
               delay={0.7}
               className="flex flex-col gap-3 items-center text-center md:text-left md:items-start"
             >
-              <div className="text-lg lg:text-xl text-primary/70 font-medium">
+              <div className="text-lg lg:text-2xl text-primary/70 font-medium">
                 Design
               </div>
-              <div className="text-xl lg:text-2xl font-semibold leading-relaxed">
+              <div className="text-2xl lg:text-3xl font-semibold leading-relaxed">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Adipisci molestiae
               </div>
-              <div className="text-sm lg:text-base">
+              <div className="text-base lg:text-lg">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet
                 harum minima quaerat reiciendis non voluptatum debitis a eum
                 expedita quod quo corrupti quisquam, asperiores ex, fuga
@@ -66,14 +66,14 @@ const HowPage = () => {
               delay={0.7}
               className="flex flex-col gap-3 items-center text-center md:text-left md:items-start"
             >
-              <div className="text-lg lg:text-xl text-primary/70 font-medium">
+              <div className="text-lg lg:text-2xl text-primary/70 font-medium">
                 Selection
               </div>
-              <div className="text-xl lg:text-2xl font-semibold leading-relaxed">
+              <div className="text-2xl lg:text-3xl font-semibold leading-relaxed">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Adipisci molestiae
               </div>
-              <div className="text-sm lg:text-base">
+              <div className="text-base lg:text-lg">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet
                 harum minima quaerat reiciendis non voluptatum debitis a eum
                 expedita quod quo corrupti quisquam, asperiores ex, fuga
@@ -97,14 +97,14 @@ const HowPage = () => {
               delay={0.7}
               className="flex flex-col gap-3 items-center text-center md:text-left md:items-start"
             >
-              <div className="text-lg lg:text-xl text-primary/70 font-medium">
+              <div className="text-lg lg:text-2xl text-primary/70 font-medium">
                 Access
               </div>
-              <div className="text-xl lg:text-2xl font-semibold leading-relaxed">
+              <div className="text-2xl lg:text-3xl font-semibold leading-relaxed">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Adipisci molestiae
               </div>
-              <div className="text-sm lg:text-base">
+              <div className="text-base lg:text-lg">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet
                 harum minima quaerat reiciendis non voluptatum debitis a eum
                 expedita quod quo corrupti quisquam, asperiores ex, fuga
@@ -128,14 +128,14 @@ const HowPage = () => {
               delay={0.7}
               className="flex flex-col gap-3 items-center text-center md:text-left md:items-start"
             >
-              <div className="text-lg lg:text-xl text-primary/70 font-medium">
+              <div className="text-lg lg:text-2xl text-primary/70 font-medium">
                 Investment
               </div>
-              <div className="text-xl lg:text-2xl font-semibold leading-relaxed">
+              <div className="text-2xl lg:text-3xl font-semibold leading-relaxed">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                 Adipisci molestiae
               </div>
-              <div className="text-sm lg:text-base">
+              <div className="text-base lg:text-lg">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet
                 harum minima quaerat reiciendis non voluptatum debitis a eum
                 expedita quod quo corrupti quisquam, asperiores ex, fuga

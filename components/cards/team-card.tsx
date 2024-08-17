@@ -29,7 +29,7 @@ const TeamCard = ({ member }: TeamCardProps) => {
     >
       <CardContent className="hidden group-hover:flex delay-200 flex-col transition duration-500 h-full bg-primary/60 ease-in bg-opacity-30 backdrop-blur-sm w-full justify-center items-center gap-2 text-center">
         <div className="text-lg font-medium">{member.name}</div>
-        <div className=" text-sm italic">{member.position}</div>
+        <div className=" text-base italic">{member.position}</div>
         <div className="text-center">{member.bio}</div>
 
         <div className="flex items-center gap-2">
@@ -89,7 +89,7 @@ const TeamCard = ({ member }: TeamCardProps) => {
 
       <CardFooter className="group-hover:hidden bg-opacity-30 backdrop-blur-sm  bg-primary/40 absolute bottom-0 left-0 right-0 w-full gap-1 flex flex-col justify-center items-center p-0 py-3">
         <div className="text-lg font-medium">{member.name}</div>
-        <div className=" text-sm italic">{member.position}</div>
+        <div className=" text-base italic">{member.position}</div>
       </CardFooter>
     </Card>
   );

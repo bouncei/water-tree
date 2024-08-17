@@ -51,7 +51,7 @@ const LandingPageLayout = ({ children }: { children: React.ReactNode }) => {
         className={cn(
           "",
           pathname !== "/" &&
-            "mx-auto h-full  z-10  max-w-screen-xl bg-opacity-50 px-6 xl:p-0 relative"
+            "mx-auto h-full  z-10  max-w-screen-2xl bg-opacity-50 px-6 xl:p-0 relative"
         )}
       >
         {pathname !== "/" && <NavBar />}
