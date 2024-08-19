@@ -8,9 +8,9 @@ const OrganizationPage = () => {
   return (
     <div className="h-full flex flex-col">
       <div className="py-14 md:py-16  flex flex-col items-center justify-center gap-3 md:gap-5 border-b-2 border-b-primary/70 ">
-        <div className="text-3xl font-semibold">Organization</div>
+        <div className="text-3xl lg:text-9xl font-semibold">Organization</div>
 
-        <div className="text-center text-lg">
+        <div className="text-center  lg:w-[80%]">
           <b className="text-primary/70">WATER</b> is the parent company of
           LeafTree. It is a design innovation company with a focus on designing
           sustainable products & services that stimulate a general state of

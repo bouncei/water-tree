@@ -28,10 +28,6 @@ const PrinciplesPage = () => {
           <div className="">
             Our principles is rooted in three unique parts:
           </div>
-
-          <div>
-            <Button>How it works</Button>
-          </div>
         </div>
 
         {/* RIGHT SIDE: DETAILS */}
@@ -47,10 +43,10 @@ const PrinciplesPage = () => {
               />
             </div>
 
-            <div className="text-3xl lg:text-3xl text-primary/70 font-medium">
+            <div className="text-3xl lg:text-9xl text-primary/70 font-medium">
               TRUTH
             </div>
-            <div>
+            <div className="">
               Immutable & validated facts about the industry & other factors
               pertaining to the ventures we are investing in. This essentially
               means we are not attempting to reinvent the wheel.
