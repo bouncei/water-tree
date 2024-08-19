@@ -25,10 +25,7 @@ const links = [
     title: "Team",
     href: "/about/team",
   },
-  {
-    title: "About",
-    href: "/about",
-  },
+
   {
     title: "Portfolio",
     href: "/portfolio",
@@ -112,7 +109,7 @@ const Footer = () => {
         </div>
 
         <div className="flex flex-col gap-5">
-          {links.map((link) => (
+          {[links[0], links[1], links[2]].map((link) => (
             <div key={link.href}>
               <Link
                 href={link.href}
@@ -125,30 +122,16 @@ const Footer = () => {
         </div>
 
         <div className="flex flex-col gap-5">
-          <div className="text-primary/90">Contact Us</div>
-          <a href="mailto:sounds@those.app">
-            <Button
-              variant="link"
-              className="pl-0  text-black hover:text-primary/90 transition ease-in"
-            >
-              <Mail className="size-4 mr-2" />
-              help@leaftree.fund
-            </Button>
-          </a>
-
-          <a
-            href="https://wa.me/+447405249625"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Button
-              variant="link"
-              className="pl-0 text-black hover:text-primary/90 transition ease-in"
-            >
-              <Phone className="size-4 mr-2" />
-              +12 3456 78 9101
-            </Button>
-          </a>
+          {[links[3], links[4]].map((link) => (
+            <div key={link.href}>
+              <Link
+                href={link.href}
+                className="hover:text-primary/90 hover:underline transition ease-in"
+              >
+                {link.title}
+              </Link>
+            </div>
+          ))}
         </div>
 
         {/* <div className="space-y-4 flex flex-col justify-end"> */}

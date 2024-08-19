@@ -29,7 +29,7 @@ const OrganizationPage = () => {
         <div className="flex flex-col gap-32 py-20">
           {/* WATER */}
           <ListMotion className="w-full flex flex-col md:flex-row gap-12 lg:gap-20 xl:gap-32  items-center">
-            <div className="relative flex-shrink-0 size-72 xl:size-96 ">
+            <div className="relative flex-shrink-0 size-80 lg:size-[80vh] ">
               <Image
                 fill
                 src="https://images.unsplash.com/photo-1446608943998-cbd52b140335?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fHdhdGVyJTIwbGVhZnxlbnwwfHwwfHx8MA%3D%3D"
@@ -42,10 +42,10 @@ const OrganizationPage = () => {
               delay={0.6}
               className="flex flex-col gap-5 items-center text-center md:text-left md:items-start"
             >
-              <div className="text-2xl lg:text-3xl text-primary/70 font-medium">
+              <div className="text-3xl lg:text-9xl text-primary/70 font-medium">
                 WATER
               </div>
-              <div className="text-lg lg:text-xl  leading-relaxed">
+              <div className="  leading-relaxed">
                 <ListMotion
                   delay={0.8}
                   className="list-disc flex flex-col gap-5"
@@ -83,7 +83,7 @@ const OrganizationPage = () => {
 
           {/* LEAFTREE */}
           <ListMotion className="w-full flex flex-col md:flex-row-reverse gap-12 lg:gap-20 xl:gap-32  items-center">
-            <div className="relative flex-shrink-0 size-72 xl:size-96 ">
+            <div className="relative flex-shrink-0 size-80 lg:size-[80vh] ">
               <Image
                 fill
                 src="/6.png"
@@ -96,10 +96,10 @@ const OrganizationPage = () => {
               delay={0.6}
               className="flex flex-col gap-5 items-center text-center md:text-left md:items-start"
             >
-              <div className="text-2xl lg:text-3xl text-primary/70 font-medium">
+              <div className="text-3xl lg:text-9xl text-primary/70 font-medium">
                 LEAFTREE
               </div>
-              <div className="text-lg lg:text-xl  leading-relaxed">
+              <div className="  leading-relaxed">
                 <ListMotion
                   delay={0.8}
                   className="list-disc flex flex-col gap-5"
@@ -126,7 +126,7 @@ const OrganizationPage = () => {
 
           {/* FIT PROGRAM */}
           <ListMotion className="w-full flex flex-col md:flex-row gap-12 lg:gap-20 xl:gap-32  items-center">
-            <div className="relative flex-shrink-0 size-72 xl:size-96 ">
+            <div className="relative flex-shrink-0 size-80 lg:size-[80vh] ">
               <Image
                 fill
                 src="https://images.unsplash.com/photo-1527525443983-6e60c75fff46?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cGVvcGxlJTIwdHJlZXxlbnwwfHwwfHx8MA%3D%3D"
@@ -139,10 +139,10 @@ const OrganizationPage = () => {
               delay={0.6}
               className="flex flex-col gap-5 items-center text-center md:text-left md:items-start"
             >
-              <div className="text-2xl lg:text-3xl text-primary/70 font-medium">
+              <div className="text-3xl lg:text-9xl text-primary/70 font-medium">
                 FIT PROGRAM
               </div>
-              <div className="text-lg lg:text-xl  leading-relaxed">
+              <div className="  leading-relaxed">
                 <ListMotion
                   delay={0.8}
                   className="list-disc flex flex-col gap-5"

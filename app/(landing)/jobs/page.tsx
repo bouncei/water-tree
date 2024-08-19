@@ -74,9 +74,9 @@ const JobsPage = () => {
   if (!isMounted) return null;
 
   return (
-    <div className="h-full flex flex-col">
+    <div className="h-full flex flex-col border-b-2 border-b-primary/70 pb-10">
       <div className="flex flex-1 gap-y-3  flex-col">
-        <div className="py-14 md:py-16 flex flex-col items-center justify-center gap-10 border-b-2 border-b-primary/70 ">
+        <div className="py-14 md:py-16 flex flex-col items-center justify-center gap-10  ">
           <div className="text-3xl font-medium ">
             Opportunities in the Leaftree Portfolio
           </div>

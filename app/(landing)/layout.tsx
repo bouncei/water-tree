@@ -18,40 +18,9 @@ const LandingPageLayout = ({ children }: { children: React.ReactNode }) => {
 
   return (
     <main className="h-full overflow-auto  ">
-      {/* FLOATING LEAF */}
-      {/* <div className="fixed top-0 z-20 right-0">
-        <div
-          className=" size-28 sm:size-40 mt-14 "
-          style={{
-            backgroundImage: `url('/hero_header.webp')`,
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat",
-            backgroundPosition: "right",
-          }}
-        ></div>
-      </div> */}
-
-      {/* Background Video */}
-      {/* {pathname === "/" && (
-        <>
-          <video
-            ref={videoRef}
-            className="absolute top-0 left-0 h-full w-full object-cover filter brightness-75 contrast-125"
-            src="/hero.webm"
-            autoPlay
-            muted
-            loop
-            playsInline
-          />
-          <div className="inset-x-0 bottom-0 flex justify-center bg-gradient-to-t from-primary/30 -z-10 to-[#EBFFEB] pt-32 pb-8 pointer-events-none  absolute"></div>
-        </>
-      )} */}
-
       <div
         className={cn(
-          "",
-          pathname !== "/" &&
-            "mx-auto h-full  z-10  max-w-screen-2xl bg-opacity-50 px-6 xl:p-0 relative"
+          "mx-auto h-full  z-10  max-w-screen-2xl bg-opacity-50 px-6 md:px-12 2xl:p-0 relative"
         )}
       >
         {pathname !== "/" && <NavBar />}

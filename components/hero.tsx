@@ -8,17 +8,17 @@ import Link from "next/link";
 
 const LandingHero = () => {
   return (
-    <div className=" flex items-center  mx-auto     max-w-screen-2xl  px-6 xl:p-0 ">
+    <div className=" flex items-center  ">
       {/* Optional overlay for better text visibility */}
       {/* <div className="absolute inset-0 bg-black opacity-0 lg:opacity-20"></div> */}
       <div className="h-full lg:h-screen py-4 md:py-20  flex items-center justify-center gap-10  ">
         <div className="relative  w-full  ">
           <ListMotion className="w-full text-left space-y-4 sm:space-y-8 py-8">
-            <div className="text-4xl lg:text-5xl xl:text-6xl font-bold relative">
+            <div className="text-3xl lg:text-8xl font-semibold  relative">
               Investing in Design-Centric{" "}
               <span className="text-primary">Innovations</span>
             </div>
-            <p className=" text-base sm:text-lg lg::max-w-2xl mr-auto">
+            <p className="  mr-auto">
               We curate ventures based on their: Purpose, Scalability &
               Sustainability leading to the development of products that
               stimulate Well Being.

@@ -41,13 +41,7 @@ const PortfolioPage = () => {
   return (
     <div className="h-full flex flex-col">
       <div className="py-14 md:py-16  flex flex-col items-center  w-full justify-center gap-3 md:gap-5 border-b-2 border-b-primary/70 ">
-        <div className="text-4xl tracking-widest font-meduim">
-          Our Portfolio
-        </div>
-
-        <div className="text-center">
-          We build our ventures based on three (3) simple principles
-        </div>
+        <div className="text-3xl lg:text-9xl font-semibold">Our Portfolio</div>
 
         <div className="flex w-full items-center">
           <Tabs defaultValue="all" className="w-full space-y-4 lg:space-y-8">

@@ -25,9 +25,7 @@ const NavBar = () => {
   return (
     <div
       className={cn(
-        "sticky top-0  bg-transparent  flex items-center justify-between  z-20  bg-opacity-30 backdrop-blur-sm py-5 xl:py-0 ",
-        pathname === "/" &&
-          "mx-auto     max-w-screen-2xl  px-6 xl:p-0  xl:py-0 "
+        "sticky top-0  bg-transparent  flex items-center justify-between  z-20  bg-opacity-30 backdrop-blur-sm py-5 xl:py-0 "
       )}
     >
       <Logo />

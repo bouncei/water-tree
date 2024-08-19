@@ -8,7 +8,7 @@ import React from "react";
 const PrinciplesPage = () => {
   return (
     <div className="h-full flex flex-col ">
-      <div className="py-14 md:py-16    flex  gap-3 lg:gap-32 border-b-2 border-b-primary/70 justify-between ">
+      <div className="py-14 md:py-16    flex flex-col lg:flex-row  gap-10 lg:gap-32 border-b-2 border-b-primary/70 lg:justify-between ">
         {/* LEFT SIDE: TITLE  */}
         <div
           className="sticky top-0 flex flex-col gap-5 "
@@ -17,13 +17,13 @@ const PrinciplesPage = () => {
             top: 0,
           }}
         >
-          <div className="text-3xl font-semibold">Principles</div>
+          <div className="text-3xl lg:text-9xl font-semibold">Principles</div>
 
-          <div className="">
+          {/* <div className="">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti
             pariatur ad in eum officiis ducimus eos, voluptatem laudantium
             vitae! Voluptate.
-          </div>
+          </div> */}
 
           <div className="">
             Our principles is rooted in three unique parts:
@@ -34,7 +34,7 @@ const PrinciplesPage = () => {
         <ListMotion className="flex flex-col gap-10 ">
           {/* TRUTH */}
           <ListMotion className="flex flex-col gap-8">
-            <div className="relative  size-52 xl:size-72 ">
+            <div className="relative  size-72 xl:size-[35vh] ">
               <Image
                 fill
                 src="/truth.png"
@@ -43,7 +43,7 @@ const PrinciplesPage = () => {
               />
             </div>
 
-            <div className="text-3xl lg:text-9xl text-primary/70 font-medium">
+            <div className="text-3xl lg:text-8xl text-primary/70 font-medium">
               TRUTH
             </div>
             <div className="">
@@ -55,7 +55,7 @@ const PrinciplesPage = () => {
 
           {/* FAITH */}
           <ListMotion className="flex flex-col gap-8">
-            <div className="relative  size-52 xl:size-72 ">
+            <div className="relative  size-72 xl:size-[35vh] ">
               <Image
                 fill
                 src="/faith.png"
@@ -64,7 +64,7 @@ const PrinciplesPage = () => {
               />
             </div>
 
-            <div className="text-3xl lg:text-3xl text-primary/70 font-medium">
+            <div className="text-3xl lg:text-8xl  text-primary/70 font-medium">
               FAITH
             </div>
             <div>
@@ -77,7 +77,7 @@ const PrinciplesPage = () => {
 
           {/* AUTONOMY */}
           <ListMotion className="flex flex-col gap-8">
-            <div className="relative  size-52 xl:size-72 ">
+            <div className="relative  size-72 xl:size-[35vh] ">
               <Image
                 fill
                 src="/anatomy.png"
@@ -86,7 +86,7 @@ const PrinciplesPage = () => {
               />
             </div>
 
-            <div className="text-3xl lg:text-3xl text-primary/70 font-medium">
+            <div className="text-3xl lg:text-8xl  text-primary/70 font-medium">
               AUTONOMY
             </div>
             <div>
