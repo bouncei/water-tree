@@ -103,8 +103,8 @@ const Footer = () => {
         pathname === "/" ? "mx-auto     max-w-screen-2xl  px-6 xl:p-0" : ""
       }
     >
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4  gap-6 xl:gap-10 w-full py-20 ">
-        <div className="space-y-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5  gap-6 xl:gap-10 w-full py-20 ">
+        <div className="space-y-4 col-span-2">
           <Logo />
         </div>
 

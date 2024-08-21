@@ -19,7 +19,7 @@ interface TeamCardProps {
 const TeamCard = ({ member }: TeamCardProps) => {
   return (
     <Card
-      className=" group min-h-72 h-full aspect-square text-white relative "
+      className=" group min-h-52 h-full aspect-square text-white relative "
       style={{
         backgroundImage: `url(${urlFor(member.image).url()})`,
         backgroundSize: "cover",

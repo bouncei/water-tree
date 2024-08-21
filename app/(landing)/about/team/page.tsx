@@ -37,7 +37,7 @@ const TeamPage = () => {
         <div className="text-3xl font-medium ">Meet the Team</div>
       </div>
 
-      <ListMotion className="grid text-base grid-cols-1 gap-4 md:gap-32 md:grid-cols-2 py-4 md:py-8 ">
+      <ListMotion className="grid text-base grid-cols-1 gap-4 md:gap-32 md:grid-cols-2 px-4 md:px-32 py-4 md:py-8 ">
         {team.map((member, index) => (
           <TeamCard key={index} member={member} />
         ))}
